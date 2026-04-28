@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicas 2 de HTML </title>
+</head>
+<body>
+    <h2>Dicas de HTML: Links</h2>
+
+<!-- a é para criar um link, ou seja, para permitir que o usuário clique em um texto e seja redirecionado para outra página -->
+<p>
+  Estou criando um link para
+  <a href="https://www.mozilla.org/pt-BR/">a página inicial da Mozilla</a>.
+</p>
+
+<p>
+  Estou criando um link para
+  <!-- title é para dar um título ao link, ou seja, para mostrar uma
+  dica quando o usuário passar o mouse sobre o link -->
+  <a 
+    href="https://www.mozilla.org/pt-BR/"
+    title="O melhor lugar para encontrar mais informações sobre a missão da Mozilla e como contribuir">
+    a página inicial da Mozilla</a
+  >.
+</p>
+
+<h3>Links de nivel bloco</h3>
+<!-- link bloco com imagem -->
+<a href="https://www.mozilla.org/pt-BR/">
+  <img
+    src="../img/onepiece.jpg"
+    alt="Logotipo mozilla que liga a página inicial do mozilla" width="200px" />
+</a>
+
+<h2>Dicas de HTML: URLs</h2>
+<!-- URL é para criar um link, ou seja, para permitir que o usuário clique em um texto e seja redirecionado para outra página -->
+
+<p>
+  Deseja entrar em contato com um membro da equipe específica? Encontre
+  detalhes sobre nossos serviços em nossa
+  <a href="index.html">página de contatos</a>.
+</p>
+<p>
+  <!--subdiretório se quiser incluir um hiperlink dentro do index.html
+  apontando para a descrição precisa descer no diretorio de descrição 
+  antes de indicar o arquivo -->
+  Visite minha <a href="descricao/chopper.html">pagina inicial do projeto</a>.
+</p>
+ 
+<!-- se quiser incluir uma hiperlink dentro do descricao/chopper.html apontando para um arquivo em um subdiretório
+ precisa subir um nível de diretório e voltar para o diretório que deseja udar.
+ Para subir um nível de diretório, use "../" -->
+<!--<p>
+  Um link para o meu
+  <a href="../pdfs/project-brief.pdf"> breve de projeto</a>.
+</p>-->
+
+<h2>Dicas de HTML: fragmentos de documentos</h2>
+
+<!-- fragmento de documento é para criar um link para uma parte específica
+de uma página, ou seja, para permitir que o usuário clique em um texto e seja 
+redirecionado para uma parte específica da página -->
+<h3 id="Mailing_address">Endereço de correspondência</h3>
+
+<p>
+  <!-- link para um fragmento de documento -->
+  Quer escrever uma carta? Use nosso<a href="contacts.html#Mailing_address"
+    >endereço de correspondência</a
+  >.
+</p>
+
+<p>
+  <!-- link para um fragmento de documento -->
+  O <a href="#Mailing_address">endereço postal da empresa</a> pode ser
+  encontrado na parte inferior desta página.
+</p>
+
+
+<h2>Dicas de HTML: URLs absolutas versus relativos </h2>
+
+<!-- URL absoluta é para criar um link para uma página externa, ou seja,
+para permitir que o usuário clique em um texto e seja redirecionado para outra página -->
+<!-- exemplo de URL absoluta: https://www.mozilla.org/pt-BR/ -->
+
+
+<!-- URL relativa é para criar um link para uma página interna, ou seja,
+ para permitir que o usuário clique em um texto e seja redirecionado para outra página dentro do mesmo site -->
+<!-- exemplo de URL relativa: index.html -->
+
+<!-- texto do link correto -->
+<p><a href="https://firefox.com/"> Baixe o Firefox </a></p>
+<!-- texto do link incorreto -->
+<p><a href="https://firefox.com/"> clique aqui </a> para baixar o Firefox</p>
+
+
+<h2>Dicas de HTML: vinculando-se a recursos que nao são páginas HTML</h2>
+
+<p>
+  <!-- link para um arquivo PDF -->
+  <a href="http://www.example.com/large-report.pdf">
+    Baixe o relatório de vendas (PDF, 10MB)
+  </a>
+</p>
+
+<p>
+  <!-- link para um arquivo de áudio -->
+  <a href="http://www.example.com/video-stream/">
+    Assista ao vídeo (o fluxo abre em separado, qualidade HD)
+  </a>
+</p>
+
+<p>
+  <!-- link para um arquivo de jogo -->
+  <a href="http://www.example.com/car-game">
+    Jogue o jogo de carro (requer Flash Player)
+  </a>
+</p>
+ 
+<!-- download é para criar um link para um arquivo, ou seja, para
+permitir que o usuário clique em um texto e baixe um arquivo -->
+<a
+  href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US"
+  download="firefox-39-installer.exe">
+  Faça o download do Firefox 39 para Windows
+</a>
+
+</body>
+</html>
